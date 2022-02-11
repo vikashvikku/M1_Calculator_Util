@@ -64,3 +64,4 @@ The Cube func is used by clicking on the “3” button. The result of the funct
 
 Inverse:-
 The Inverse function is used by clicking on the “i” button. The result of the function will be the 1/b.
+
