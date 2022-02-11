@@ -13,3 +13,9 @@ There are three Certification:
     linux like, mv command for move, cp command for copy, rm for remove, cd foldername to enter the directory,
     cd .. to go back to previous directory and many more implementations like for running .c file,
     we use gcc filename.c, then we can get the output in terminal by command ./a.out.
+
+(c) Hackerearth 1000 point Screenshot :
+    In this website of Hackerearth i solved many questions in C language with various concepts like
+    Basics C programming with implementation of array, pointer, factorial, memory allocation, 
+    Some time related problem in C and many other concepts and question with good Time complexity,
+    and space complexity of implementations.
