@@ -29,6 +29,9 @@ void main()
         printf("log base e = l\n");
         printf("Permutation = p\n");
         printf("Combination = b\n");
+        printf("Square = 2\n");
+        printf("Cube = 3\n");
+        printf("Inverse = i\n");
     // Operator Declaration for the calculation
     printf("Enter the calculation Operator\n");
     scanf("%c", &operator);
