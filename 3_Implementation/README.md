@@ -1,67 +1,121 @@
-The Various Implementation in this project are :-
+# The Various Implementation in this project are :-
 
-Addition :-
-The addition (Sum function) is used by clicking “+” button, which gives the result as a + b.
+## Calculator
 
-Subtraction:-
-The subtraction(minus function) is used by clicking “+” button, which gives the result as a - b.
+### Addition :-
+The addition (Sum function) is used by clicking “1” button, which gives the result as a + b.
 
-Multiplication:-
-The Multiplication (product function) is used by clicking on the “*” button. The function results in a * b.
+### Subtraction:-
+The subtraction(minus function) is used by clicking “2” button, which gives the result as a - b.
 
-Division:-
-The division(divide function) is used by clicking on the “/” button. The function results in a/b.
-Modulo:-
-The modulo function (remainder) is used by clicking on the “%” button. The result of the function is a % b.
+### Multiplication:-
+The Multiplication (product function) is used by clicking on the “3” button. The function results in a * b.
 
-LCM:-
-The LCM (Lowest Common Factor) function is used by clicking on the“L”button. The results of the function will be the smallest number that is a multiple of each value.
+### Division:-
+The division(divide function) is used by clicking on the “4” button. The function results in a/b.
+### Modulo:-
+The modulo function (remainder) is used by clicking on the “5” button. The result of the function is a % b.
 
-HCF:-
-The HCF (Highest Common Factor) function is used by clicking on the “H” button. The result of the function will be the highest number that is multiple of each value.
+### Square root:-
+The square root function is used by clicking on the “6” button. The result of the function will be the x ^ 2.
 
-SI:-
-The SI (Simple Interest) function is used by clicking on the “S” button. The result of the function will be (principle * rate * time) / 100.
+### Cube Root:-
+The Cube root function is used by clicking on the “7” button. The result of the function will be the x ^ 3.
 
-CI:-
-The CI (Compound Interest) function is used by clicking on the “C” button. The result of the function will be (principle * (1+ (rate/100) ^time) – principle.
+### Square:-
+The Square func is used by clicking on the “8”button. The result of the function will be a ^2.
 
-Integration:-
-The Integration function is used by clicking on the “I”button. The result of the function will be area of curve in the graph.
+### Cube:-
+The Cube func is used by clicking on the “9” button. The result of the function will be a ^ 3.
 
-Power:-
-The power function is used by clicking on the “^” button. The result of the function will be the a ^ b.
+### Inverse:-
+The Inverse function is used by clicking on the “10” button. The result of the function will be the 1/b.
 
-Square root:-
-The square root function is used by clicking on the “4” button. The result of the function will be the x ^ 2.
 
-Cube Root:-
-The Cube root function is used by clicking on the “5” button. The result of the function will be the x ^ 3.
+## Basic Mathematics Calculation
 
-Sine:-
-The Sine function is used by clicking on the “s” button. The result of the function will be the sin (a), which needs the input in degree.
+### LCM:-
+The LCM (Lowest Common Factor) function is used by clicking on the“1”button. The results of the function will be the smallest number that is a multiple of each value.
 
-Cosine:-
-The Cosine function is used by clicking on the “c” button. The result of the function will be the cos (a), which needs the input in degree.
+### HCF:-
+The HCF (Highest Common Factor) function is used by clicking on the “2” button. The result of the function will be the highest number that is multiple of each value.
 
-Tangent:-
-The Tangent function is used by clicking on the “t” button. The result of the function will be the tan (a).
+### SI:-
+The SI (Simple Interest) function is used by clicking on the “3” button. The result of the function will be (principle * rate * time) / 100.
 
-Logarithms:-
-The Logarithms function is used by clicking on the “l” button. The result of the function will be the log a base e.
+### CI:-
+The CI (Compound Interest) function is used by clicking on the “4” button. The result of the function will be (principle * (1+ (rate/100) ^time) – principle.
 
-Permutation:-
-The permutation function is used by clicking on the “p” button. The result of the function will be the npr  =  n! / (n-r)! 
+### Logarithms:-
+The Logarithms function is used by clicking on the “5” button. The result of the function will be the log a base e.
 
-Combination:-
-The Combination function is used by clicking on the “b” button. The result of the function will be the  ncr = n! / r! (n – r)!.
+### Integration:-
+The Integration function is used by clicking on the “6”button. The result of the function will be area of curve in the graph.
 
-Square:-
-The Square func is used by clicking on the “2”button. The result of the function will be a ^2.
+### Permutation:-
+The permutation function is used by clicking on the “7” button. The result of the function will be the npr  =  n! / (n-r)! 
 
-Cube:-
-The Cube func is used by clicking on the “3” button. The result of the function will be a ^ 3.
+### Combination:-
+The Combination function is used by clicking on the “8” button. The result of the function will be the  ncr = n! / r! (n – r)!.
 
-Inverse:-
-The Inverse function is used by clicking on the “i” button. The result of the function will be the 1/b.
 
+## Trigonometric Calculation
+
+### Sine:-
+The Sine function is used by clicking on the “1” button. The result of the function will be the sin (a), which needs the input in degree.
+
+### Cosine:-
+The Cosine function is used by clicking on the “2” button. The result of the function will be the cos (a), which needs the input in degree.
+
+### Tangent:-
+The Tangent function is used by clicking on the “3” button. The result of the function will be the tan (a).
+
+### Cosec:- 
+The Cosec function is used by clicking on the “4” button. The result of the function will be the 1 / sin (a), which needs the input in degree.
+
+### Sec:-
+The Sec function is used by clicking on the “5” button. The result of the function will be the 1 / cos (a), which needs the input in degree.
+
+### Cot:-
+The Cot function is used by clicking on the “6” button. The result of the function will be the 1 / tan (a), which needs the input in degree.
+
+## Memory Conversion
+
+ ### Byte to Bits 
+ ### Kilobyte to Bytes
+ ### Megabyte to Kilobytes
+ ### Gigabyte to Megabytes
+ ### Terabyte to Gigabytes
+ ### Petabyte to Terabytes
+ ### Exabytes to Petabytes
+ ### Zettabyte to Exabytes
+ ### Yottabyte to Zetabytes
+ 
+ 
+ # Measurement Conversion
+ 
+ ### Centimetre to Millimetres
+ ### Millimetre to Centimetre
+ ### Decimetre to Centimetres
+ ### Centimetre to Decimetres
+ ### Metre to Decimetres
+ ### Decimetre to Metres
+ ### Decametre to Metres
+ ### metre to Decametres
+ ### Hectometre to Decametres
+ ### Decametre to Hectometres
+ ### Kilometre to Hectametres
+ ### Hectometre to Kilometre
+ 
+ 
+ # Currency Conversion:-
+ 
+ ### Rupees to Dollar
+ ### Dollar to Rupees
+ ### Rupees to Euro
+ ### Euro to Rupees
+ ### Rupees to Riyal
+ ### Riyal to Rupees
+ ### Rupees to Pond
+ ### Pond to Rupees
+ 
