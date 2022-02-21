@@ -19,10 +19,10 @@ This  fully featured scientific calculator with proper operator is implemented i
   - Multiplication
   - Division
   - Modullo
-  - Square
-  - Cube
   - Square root
   - Cube root
+  - Square
+  - Cube
   - Inverse
   
   ### Basice Mathematics Calculation
@@ -48,21 +48,27 @@ This  fully featured scientific calculator with proper operator is implemented i
 
   ### Measurement Conversion
  - Centimetre to Millimetres
+ - Millimetre to Centimetre
  - Decimetre to Centimetres
+ - Centimetre to Decimetres
  - Metre to Decimetres
+ - Decimetre to Metres
  - Decametre to Metres
+ - metre to Decametres
  - Hectometre to Decametres
+ - Decametre to Hectometres
  - Kilometre to Hectametres
+ - Hectometre to Kilometre
  
  ### Currency Conversion
  - Rupees to Dollar
  - Dollar to Rupees
  - Rupees to Euro
  - Euro to Rupees
- - Riyal to Rupees
  - Rupees to Riyal
- - Pond to Rupees
+ - Riyal to Rupees
  - Rupees to Pond
+ - Pond to Rupees
  
  ### Trigonometric Calculation
  - Sine
