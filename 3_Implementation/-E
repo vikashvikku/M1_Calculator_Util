@@ -1,0 +1,2024 @@
+	.file	"Calculator.c"
+	.text
+	.section	.rodata
+.LC0:
+	.string	"Enter 1 for Calculator"
+.LC1:
+	.string	"Enter 2 for Maths Calculation"
+	.align 8
+.LC2:
+	.string	"Enter 3 for Trigonometric Calculation"
+.LC3:
+	.string	"Enter 4 for Memory Conversion"
+	.align 8
+.LC4:
+	.string	"Enter 5 for Measurement Conversion"
+	.align 8
+.LC5:
+	.string	"Enter 6 for Currency Conversion"
+.LC6:
+	.string	"%d"
+	.align 8
+.LC7:
+	.string	"***  Welcome  to Calculator ***\n"
+.LC8:
+	.string	"Addition = 1 "
+.LC9:
+	.string	"Subtraction = 2 "
+.LC10:
+	.string	"Multiplication = 3 "
+.LC11:
+	.string	"Division = 4 "
+.LC12:
+	.string	"Modulo = 5 "
+.LC13:
+	.string	"Square root = 6 "
+.LC14:
+	.string	"Cube root = 7 "
+.LC15:
+	.string	"Square = 8 "
+.LC16:
+	.string	"Cube = 9 "
+.LC17:
+	.string	"Inverse = 10 "
+	.align 8
+.LC18:
+	.string	"Enter the calculation Operator"
+.LC19:
+	.string	"Enter Value 1 and Value 2:"
+.LC20:
+	.string	"%f %f"
+	.align 8
+.LC21:
+	.string	"Your Result of Addition is : %.2f"
+	.align 8
+.LC22:
+	.string	"Your Result of Subtraction is : %.2f"
+	.align 8
+.LC23:
+	.string	"Your Result of Multiplication is : %.2f"
+.LC24:
+	.string	"Enter Value 1 and  Value 2:"
+	.align 8
+.LC25:
+	.string	"Your Result of division is : %.2f"
+.LC26:
+	.string	"Your Modulo value is : %d"
+.LC27:
+	.string	"Enter value: "
+.LC28:
+	.string	"%f"
+	.align 8
+.LC30:
+	.string	"Your Result of Square Root is : %.2f"
+	.align 8
+.LC32:
+	.string	"Your Result of Cube Root is : %.2f"
+	.align 8
+.LC34:
+	.string	"Your Result of Square is : %.2f"
+.LC36:
+	.string	"Your Result of Cube is : %.2f"
+	.align 8
+.LC38:
+	.string	"Your Result of Inverse is : %.2f"
+.LC39:
+	.string	"Fail"
+.LC40:
+	.string	"LCM = 1 "
+.LC41:
+	.string	"HCF = 2 "
+.LC42:
+	.string	"Simple Interest = 3 "
+.LC43:
+	.string	"Compound Interest = 4 "
+.LC44:
+	.string	"log = 5 "
+.LC45:
+	.string	"Integration = 6 "
+.LC46:
+	.string	"Permutation =  7 "
+.LC47:
+	.string	"Combination =  8 "
+	.align 8
+.LC48:
+	.string	"Enter Value 1 and Value 2 for LCM :"
+.LC49:
+	.string	"The LCM of %d and %d is : %d"
+	.align 8
+.LC50:
+	.string	"Enter Value 1 and Value 2 for HCF :"
+.LC51:
+	.string	"H.C.F of %d and %d is : %d"
+.LC52:
+	.string	"Enter Principle and Rate :"
+.LC53:
+	.string	"Enter Time:"
+.LC55:
+	.string	"Your SI is : %.2f"
+.LC56:
+	.string	"Your CI is : %.2f"
+	.align 8
+.LC57:
+	.string	"Your Result of Logarithm is : %.2f"
+.LC60:
+	.string	"Value of integration is :%.3f"
+.LC61:
+	.string	"Enter Value 1 and Value 2 : "
+	.align 8
+.LC62:
+	.string	"Result of Permutation is %.1f: "
+	.align 8
+.LC63:
+	.string	"Result of Combination is %.1f: "
+.LC64:
+	.string	"sin =  1"
+.LC65:
+	.string	"cos =  2"
+.LC66:
+	.string	"tan = 3"
+.LC67:
+	.string	"cosec = 4"
+.LC68:
+	.string	"sec = 5"
+.LC69:
+	.string	"cot = 6"
+	.align 8
+.LC70:
+	.string	"Enter the value of angle in degree :"
+.LC72:
+	.string	"Sin value is %.2f"
+.LC73:
+	.string	"Cos value is %.2f"
+.LC74:
+	.string	"Tan value is %.2f"
+.LC75:
+	.string	"Cosec value is %.2f"
+.LC76:
+	.string	"Failed for Trigo Calculation"
+.LC77:
+	.string	"Byte to bit = 1"
+.LC78:
+	.string	"Kilobyte to byte = 2"
+.LC79:
+	.string	"Megabyte to Kilobyte = 3"
+.LC80:
+	.string	"Gigabyte to Megabyte = 4"
+.LC81:
+	.string	"Terabyte to Gigabyte = 5"
+.LC82:
+	.string	"Petabyte to Terabyte = 6"
+.LC83:
+	.string	"Exabyte to Terabyte = 7"
+.LC84:
+	.string	"Zetabyte to Exabyte = 8"
+.LC85:
+	.string	"Yottabyte to Zetabyte = 9"
+.LC86:
+	.string	"Enter the value in bits "
+.LC88:
+	.string	"Your Value is %.1f Byte"
+.LC89:
+	.string	"Enter the value in Bytes "
+.LC90:
+	.string	"Your Value is %.1f kb"
+.LC91:
+	.string	"Enter the value in kb "
+.LC92:
+	.string	"Your Value is %.1f mb"
+.LC93:
+	.string	"Enter the value in mb "
+.LC94:
+	.string	"Your Value is %.1f gb"
+.LC95:
+	.string	"Enter the value in gb "
+.LC96:
+	.string	"Your Value is %.1f tb"
+.LC97:
+	.string	"Enter the value in tb "
+.LC98:
+	.string	"Your Value is %.1f pb"
+.LC99:
+	.string	"Enter the value in pb "
+.LC100:
+	.string	"Your Value is %.1f eb"
+.LC101:
+	.string	"Enter the value in eb "
+.LC102:
+	.string	"Your Value is %.1f zb"
+.LC103:
+	.string	"Enter the value in zb "
+.LC104:
+	.string	"Your Value is %.1f yb"
+.LC105:
+	.string	"Failed for memory conversion"
+.LC106:
+	.string	"Centimetre to Millimetre = 1"
+.LC107:
+	.string	"Millimetre to Centimetre = 2"
+.LC108:
+	.string	"Decimetre to Centimetre = 3"
+.LC109:
+	.string	"Centimetre to Decimetre = 4"
+.LC110:
+	.string	"Metre to Decimetre = 5"
+.LC111:
+	.string	"Decimetre to Metre = 6"
+.LC112:
+	.string	"Decametre to Metre = 7"
+.LC113:
+	.string	"Metre to Decametre = 8"
+.LC114:
+	.string	"Hectometre to Decametre = 9"
+.LC115:
+	.string	"Decametre to Hectometre = 10"
+.LC116:
+	.string	"Kilometre to Hectametre = 11"
+.LC117:
+	.string	"Hectometre to Kilometre = 12"
+.LC118:
+	.string	"Enter the value in cm "
+.LC120:
+	.string	"Your Value is %.1f mm"
+.LC121:
+	.string	"Enter the value in mm "
+.LC122:
+	.string	"Your Value is %.1f cm"
+.LC123:
+	.string	"Enter the value in dm "
+.LC124:
+	.string	"Your Value is %.1f dm"
+.LC125:
+	.string	"Enter the value in m "
+.LC126:
+	.string	"Your Value is %.1f m"
+.LC127:
+	.string	"Enter the value in dam "
+.LC128:
+	.string	"Enter the value in hm "
+.LC129:
+	.string	"Your Value is %.1f dam"
+.LC130:
+	.string	"Your Value is %.1f hm"
+.LC131:
+	.string	"Enter the value in km "
+.LC132:
+	.string	"Your Value is %.1f km"
+	.align 8
+.LC133:
+	.string	"Failed for measurement conversion"
+.LC134:
+	.string	"Rupees to Dollar = 1"
+.LC135:
+	.string	"Dollar to Rupees = 2"
+.LC136:
+	.string	"Rupees to Euro = 3"
+.LC137:
+	.string	"Euro to Rupees = 4"
+.LC138:
+	.string	"Rupees to Riyal= 5"
+.LC139:
+	.string	"Riyal to Rupees = 6"
+.LC140:
+	.string	"Rupees to Pond = 7"
+.LC141:
+	.string	"Pond to Rupees = 8"
+.LC142:
+	.string	"Enter the money in RS."
+.LC144:
+	.string	"You have : $%.1f"
+.LC145:
+	.string	"Enter the money in $"
+.LC146:
+	.string	"You have : RS.%.1f"
+.LC148:
+	.string	"You have : Euro %.1f"
+.LC149:
+	.string	"Enter the money in Euro"
+.LC150:
+	.string	"You have : Rs.%.1f"
+.LC152:
+	.string	"You have : Riyal %.1f"
+.LC153:
+	.string	"Enter the money in Riyal "
+.LC155:
+	.string	"You have : Pond %.1f"
+.LC156:
+	.string	"Enter the money in Pond"
+	.align 8
+.LC157:
+	.string	"Sorry! You are not dialing right Value as per our system"
+.LC158:
+	.string	"Failed for Currecy conversion"
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB6:
+	.cfi_startproc
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	pushq	%r12
+	pushq	%rbx
+	subq	$352, %rsp
+	.cfi_offset 12, -24
+	.cfi_offset 3, -32
+	movq	%fs:40, %rax
+	movq	%rax, -24(%rbp)
+	xorl	%eax, %eax
+	leaq	.LC0(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC1(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC2(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC3(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC4(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC5(%rip), %rdi
+	call	puts@PLT
+	leaq	-340(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-340(%rbp), %eax
+	cmpl	$6, %eax
+	ja	.L2
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L4(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L4(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L4:
+	.long	.L2-.L4
+	.long	.L9-.L4
+	.long	.L8-.L4
+	.long	.L7-.L4
+	.long	.L6-.L4
+	.long	.L5-.L4
+	.long	.L3-.L4
+	.text
+.L9:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC8(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC9(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC10(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC11(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC12(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC13(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC14(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC15(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC16(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC17(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-324(%rbp), %eax
+	cmpl	$10, %eax
+	ja	.L10
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L12(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L12(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L12:
+	.long	.L10-.L12
+	.long	.L21-.L12
+	.long	.L20-.L12
+	.long	.L19-.L12
+	.long	.L18-.L12
+	.long	.L17-.L12
+	.long	.L16-.L12
+	.long	.L15-.L12
+	.long	.L14-.L12
+	.long	.L13-.L12
+	.long	.L11-.L12
+	.text
+.L21:
+	leaq	.LC19(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	-332(%rbp), %xmm0
+	addss	%xmm1, %xmm0
+	movss	%xmm0, -28(%rbp)
+	cvtss2sd	-28(%rbp), %xmm0
+	leaq	.LC21(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L20:
+	leaq	.LC19(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	-332(%rbp), %xmm1
+	subss	%xmm1, %xmm0
+	movss	%xmm0, -32(%rbp)
+	cvtss2sd	-32(%rbp), %xmm0
+	leaq	.LC22(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L19:
+	leaq	.LC19(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	-332(%rbp), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -36(%rbp)
+	cvtss2sd	-36(%rbp), %xmm0
+	leaq	.LC23(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L18:
+	leaq	.LC24(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	-332(%rbp), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -40(%rbp)
+	cvtss2sd	-40(%rbp), %xmm0
+	leaq	.LC25(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L17:
+	leaq	.LC19(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movss	-332(%rbp), %xmm0
+	cvttss2sil	%xmm0, %ecx
+	cltd
+	idivl	%ecx
+	movl	%edx, -44(%rbp)
+	movl	-44(%rbp), %eax
+	movl	%eax, %esi
+	leaq	.LC26(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L22
+.L16:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	.LC29(%rip), %xmm0
+	movss	%xmm0, -52(%rbp)
+	cvtss2sd	-52(%rbp), %xmm1
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	call	pow@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -48(%rbp)
+	cvtss2sd	-48(%rbp), %xmm0
+	leaq	.LC30(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L15:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	.LC31(%rip), %xmm0
+	movss	%xmm0, -60(%rbp)
+	cvtss2sd	-60(%rbp), %xmm1
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	call	pow@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -56(%rbp)
+	cvtss2sd	-56(%rbp), %xmm0
+	leaq	.LC32(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L14:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	.LC33(%rip), %xmm0
+	movss	%xmm0, -68(%rbp)
+	cvtss2sd	-68(%rbp), %xmm1
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	call	pow@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -64(%rbp)
+	cvtss2sd	-64(%rbp), %xmm0
+	leaq	.LC34(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L13:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	.LC35(%rip), %xmm0
+	movss	%xmm0, -76(%rbp)
+	cvtss2sd	-76(%rbp), %xmm1
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	call	pow@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -72(%rbp)
+	cvtss2sd	-72(%rbp), %xmm0
+	leaq	.LC36(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L11:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC37(%rip), %xmm0
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -80(%rbp)
+	cvtss2sd	-80(%rbp), %xmm0
+	leaq	.LC38(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L22
+.L10:
+	leaq	.LC39(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L22:
+	jmp	.L23
+.L8:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC40(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC41(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC42(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC43(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC44(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC45(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC46(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC47(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-328(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-328(%rbp), %eax
+	cmpl	$8, %eax
+	ja	.L24
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L26(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L26(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L26:
+	.long	.L24-.L26
+	.long	.L33-.L26
+	.long	.L32-.L26
+	.long	.L31-.L26
+	.long	.L30-.L26
+	.long	.L29-.L26
+	.long	.L28-.L26
+	.long	.L27-.L26
+	.long	.L25-.L26
+	.text
+.L33:
+	leaq	.LC48(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, -88(%rbp)
+	movss	-332(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, -84(%rbp)
+	movl	-88(%rbp), %eax
+	cmpl	%eax, -84(%rbp)
+	cmovge	-84(%rbp), %eax
+	movl	%eax, -320(%rbp)
+.L36:
+	movl	-320(%rbp), %eax
+	cltd
+	idivl	-88(%rbp)
+	movl	%edx, %eax
+	testl	%eax, %eax
+	jne	.L34
+	movl	-320(%rbp), %eax
+	cltd
+	idivl	-84(%rbp)
+	movl	%edx, %eax
+	testl	%eax, %eax
+	jne	.L34
+	movl	-320(%rbp), %ecx
+	movl	-84(%rbp), %edx
+	movl	-88(%rbp), %eax
+	movl	%eax, %esi
+	leaq	.LC49(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	nop
+	jmp	.L46
+.L34:
+	addl	$1, -320(%rbp)
+	jmp	.L36
+.L32:
+	leaq	.LC50(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, -96(%rbp)
+	movss	-332(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, -92(%rbp)
+	movl	$1, -316(%rbp)
+	jmp	.L38
+.L41:
+	movl	-96(%rbp), %eax
+	cltd
+	idivl	-316(%rbp)
+	movl	%edx, %eax
+	testl	%eax, %eax
+	jne	.L39
+	movl	-92(%rbp), %eax
+	cltd
+	idivl	-316(%rbp)
+	movl	%edx, %eax
+	testl	%eax, %eax
+	jne	.L39
+	movl	-316(%rbp), %eax
+	movl	%eax, -312(%rbp)
+.L39:
+	addl	$1, -316(%rbp)
+.L38:
+	movl	-316(%rbp), %eax
+	cmpl	-96(%rbp), %eax
+	jg	.L40
+	movl	-316(%rbp), %eax
+	cmpl	-92(%rbp), %eax
+	jle	.L41
+.L40:
+	movl	-312(%rbp), %ecx
+	movl	-92(%rbp), %edx
+	movl	-96(%rbp), %eax
+	movl	%eax, %esi
+	leaq	.LC51(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L46
+.L31:
+	leaq	.LC52(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	leaq	.LC53(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	-332(%rbp), %xmm0
+	mulss	%xmm0, %xmm1
+	movl	-324(%rbp), %eax
+	cvtsi2ssl	%eax, %xmm0
+	mulss	%xmm1, %xmm0
+	movss	.LC54(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -100(%rbp)
+	cvtss2sd	-100(%rbp), %xmm0
+	leaq	.LC55(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L30:
+	leaq	.LC52(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	leaq	.LC53(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm3
+	movsd	%xmm3, -360(%rbp)
+	movl	-324(%rbp), %eax
+	cvtsi2sdl	%eax, %xmm2
+	movss	-332(%rbp), %xmm0
+	movss	.LC54(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movaps	%xmm0, %xmm1
+	movss	.LC37(%rip), %xmm0
+	addss	%xmm1, %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movapd	%xmm2, %xmm1
+	call	pow@PLT
+	mulsd	-360(%rbp), %xmm0
+	movss	-336(%rbp), %xmm1
+	cvtss2sd	%xmm1, %xmm1
+	subsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -104(%rbp)
+	cvtss2sd	-104(%rbp), %xmm0
+	leaq	.LC56(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L29:
+	leaq	.LC27(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	call	log@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -108(%rbp)
+	cvtss2sd	-108(%rbp), %xmm0
+	leaq	.LC57(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L28:
+	leaq	.LC19(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	pxor	%xmm0, %xmm0
+	movss	%xmm0, -304(%rbp)
+	movss	-336(%rbp), %xmm0
+	movss	-332(%rbp), %xmm1
+	comiss	%xmm1, %xmm0
+	jbe	.L42
+	movss	-336(%rbp), %xmm0
+	movss	%xmm0, -308(%rbp)
+	movss	-332(%rbp), %xmm0
+	movss	%xmm0, -336(%rbp)
+	movss	-308(%rbp), %xmm0
+	movss	%xmm0, -332(%rbp)
+.L42:
+	movss	-336(%rbp), %xmm0
+	movss	%xmm0, -308(%rbp)
+	jmp	.L44
+.L45:
+	movl	-116(%rbp), %eax
+	imull	%eax, %eax
+	movl	-116(%rbp), %edx
+	addl	%edx, %edx
+	addl	%edx, %eax
+	subl	$4, %eax
+	movl	%eax, -112(%rbp)
+	cvtsi2ssl	-112(%rbp), %xmm1
+	movss	-332(%rbp), %xmm0
+	movss	-336(%rbp), %xmm2
+	subss	%xmm2, %xmm0
+	mulss	%xmm1, %xmm0
+	movss	.LC59(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	-304(%rbp), %xmm1
+	addss	%xmm1, %xmm0
+	movss	%xmm0, -304(%rbp)
+	movss	-332(%rbp), %xmm0
+	movss	-336(%rbp), %xmm1
+	subss	%xmm1, %xmm0
+	movss	.LC59(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	-308(%rbp), %xmm1
+	addss	%xmm1, %xmm0
+	movss	%xmm0, -308(%rbp)
+.L44:
+	movss	-332(%rbp), %xmm0
+	comiss	-308(%rbp), %xmm0
+	ja	.L45
+	cvtss2sd	-304(%rbp), %xmm0
+	leaq	.LC60(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L27:
+	leaq	.LC61(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, %edi
+	call	fact
+	movl	%eax, %ebx
+	movss	-336(%rbp), %xmm0
+	movss	-332(%rbp), %xmm1
+	subss	%xmm1, %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, %edi
+	call	fact
+	movl	%eax, %ecx
+	movl	%ebx, %eax
+	cltd
+	idivl	%ecx
+	cvtsi2ssl	%eax, %xmm0
+	movss	%xmm0, -120(%rbp)
+	cvtss2sd	-120(%rbp), %xmm0
+	leaq	.LC62(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L25:
+	leaq	.LC61(%rip), %rdi
+	call	puts@PLT
+	leaq	-332(%rbp), %rdx
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC20(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, %edi
+	call	fact
+	movl	%eax, %ebx
+	movss	-332(%rbp), %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, %edi
+	call	fact
+	movl	%eax, %r12d
+	movss	-336(%rbp), %xmm0
+	movss	-332(%rbp), %xmm1
+	subss	%xmm1, %xmm0
+	cvttss2sil	%xmm0, %eax
+	movl	%eax, %edi
+	call	fact
+	movl	%r12d, %edx
+	imull	%eax, %edx
+	movl	%edx, %ecx
+	movl	%ebx, %eax
+	cltd
+	idivl	%ecx
+	cvtsi2ssl	%eax, %xmm0
+	movss	%xmm0, -124(%rbp)
+	cvtss2sd	-124(%rbp), %xmm0
+	leaq	.LC63(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L46
+.L24:
+	leaq	.LC39(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L46:
+	jmp	.L23
+.L7:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC64(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC65(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC66(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC67(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC68(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC69(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-324(%rbp), %eax
+	cmpl	$6, %eax
+	ja	.L47
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L49(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L49(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L49:
+	.long	.L47-.L49
+	.long	.L54-.L49
+	.long	.L53-.L49
+	.long	.L52-.L49
+	.long	.L51-.L49
+	.long	.L50-.L49
+	.long	.L48-.L49
+	.text
+.L54:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -132(%rbp)
+	cvtss2sd	-132(%rbp), %xmm0
+	call	sin@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -128(%rbp)
+	cvtss2sd	-128(%rbp), %xmm0
+	leaq	.LC72(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L53:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -140(%rbp)
+	cvtss2sd	-140(%rbp), %xmm0
+	call	cos@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -136(%rbp)
+	cvtss2sd	-136(%rbp), %xmm0
+	leaq	.LC73(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L52:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -148(%rbp)
+	cvtss2sd	-148(%rbp), %xmm0
+	call	tan@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -144(%rbp)
+	cvtss2sd	-144(%rbp), %xmm0
+	leaq	.LC74(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L51:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -160(%rbp)
+	cvtss2sd	-160(%rbp), %xmm0
+	call	sin@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -156(%rbp)
+	movss	.LC37(%rip), %xmm0
+	divss	-156(%rbp), %xmm0
+	movss	%xmm0, -152(%rbp)
+	cvtss2sd	-152(%rbp), %xmm0
+	leaq	.LC75(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L50:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -172(%rbp)
+	cvtss2sd	-172(%rbp), %xmm0
+	call	cos@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -168(%rbp)
+	movss	.LC37(%rip), %xmm0
+	divss	-168(%rbp), %xmm0
+	movss	%xmm0, -164(%rbp)
+	cvtss2sd	-164(%rbp), %xmm0
+	leaq	.LC74(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L48:
+	leaq	.LC70(%rip), %rdi
+	call	puts@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm1
+	movsd	.LC71(%rip), %xmm0
+	mulsd	%xmm1, %xmm0
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -184(%rbp)
+	cvtss2sd	-184(%rbp), %xmm0
+	call	tan@PLT
+	cvtsd2ss	%xmm0, %xmm0
+	movss	%xmm0, -180(%rbp)
+	movss	.LC37(%rip), %xmm0
+	divss	-180(%rbp), %xmm0
+	movss	%xmm0, -176(%rbp)
+	cvtss2sd	-176(%rbp), %xmm0
+	leaq	.LC74(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L55
+.L47:
+	leaq	.LC76(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L55:
+	jmp	.L23
+.L6:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC77(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC78(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC79(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC80(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC81(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC82(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC83(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC84(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC85(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-324(%rbp), %eax
+	cmpl	$9, %eax
+	ja	.L56
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L58(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L58(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L58:
+	.long	.L56-.L58
+	.long	.L66-.L58
+	.long	.L65-.L58
+	.long	.L64-.L58
+	.long	.L63-.L58
+	.long	.L62-.L58
+	.long	.L61-.L58
+	.long	.L60-.L58
+	.long	.L59-.L58
+	.long	.L57-.L58
+	.text
+.L66:
+	leaq	.LC86(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -188(%rbp)
+	cvtss2sd	-188(%rbp), %xmm0
+	leaq	.LC88(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L65:
+	leaq	.LC89(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -192(%rbp)
+	cvtss2sd	-192(%rbp), %xmm0
+	leaq	.LC90(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L64:
+	leaq	.LC91(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -196(%rbp)
+	cvtss2sd	-196(%rbp), %xmm0
+	leaq	.LC92(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L63:
+	leaq	.LC93(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -200(%rbp)
+	cvtss2sd	-200(%rbp), %xmm0
+	leaq	.LC94(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L62:
+	leaq	.LC95(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -204(%rbp)
+	cvtss2sd	-204(%rbp), %xmm0
+	leaq	.LC96(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L61:
+	leaq	.LC97(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -208(%rbp)
+	cvtss2sd	-208(%rbp), %xmm0
+	leaq	.LC98(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L60:
+	leaq	.LC99(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -212(%rbp)
+	cvtss2sd	-212(%rbp), %xmm0
+	leaq	.LC100(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L59:
+	leaq	.LC101(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -216(%rbp)
+	cvtss2sd	-216(%rbp), %xmm0
+	leaq	.LC102(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L57:
+	leaq	.LC103(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC87(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -220(%rbp)
+	cvtss2sd	-220(%rbp), %xmm0
+	leaq	.LC104(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L67
+.L56:
+	leaq	.LC105(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L67:
+	jmp	.L23
+.L5:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC106(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC107(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC108(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC109(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC110(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC111(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC112(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC113(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC114(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC115(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC116(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC117(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-324(%rbp), %eax
+	cmpl	$12, %eax
+	ja	.L68
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L70(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L70(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L70:
+	.long	.L68-.L70
+	.long	.L81-.L70
+	.long	.L80-.L70
+	.long	.L79-.L70
+	.long	.L78-.L70
+	.long	.L77-.L70
+	.long	.L76-.L70
+	.long	.L75-.L70
+	.long	.L74-.L70
+	.long	.L73-.L70
+	.long	.L72-.L70
+	.long	.L71-.L70
+	.long	.L69-.L70
+	.text
+.L81:
+	leaq	.LC118(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -224(%rbp)
+	cvtss2sd	-224(%rbp), %xmm0
+	leaq	.LC120(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L80:
+	leaq	.LC121(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -228(%rbp)
+	cvtss2sd	-228(%rbp), %xmm0
+	leaq	.LC122(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L79:
+	leaq	.LC123(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -232(%rbp)
+	cvtss2sd	-232(%rbp), %xmm0
+	leaq	.LC122(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L78:
+	leaq	.LC118(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -236(%rbp)
+	cvtss2sd	-236(%rbp), %xmm0
+	leaq	.LC124(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L77:
+	leaq	.LC125(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -240(%rbp)
+	cvtss2sd	-240(%rbp), %xmm0
+	leaq	.LC124(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L76:
+	leaq	.LC123(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -244(%rbp)
+	cvtss2sd	-244(%rbp), %xmm0
+	leaq	.LC126(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L75:
+	leaq	.LC127(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -248(%rbp)
+	cvtss2sd	-248(%rbp), %xmm0
+	leaq	.LC126(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L74:
+	leaq	.LC125(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -252(%rbp)
+	cvtss2sd	-252(%rbp), %xmm0
+	leaq	.LC122(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L73:
+	leaq	.LC128(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -256(%rbp)
+	cvtss2sd	-256(%rbp), %xmm0
+	leaq	.LC129(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L72:
+	leaq	.LC127(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -260(%rbp)
+	cvtss2sd	-260(%rbp), %xmm0
+	leaq	.LC130(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L71:
+	leaq	.LC131(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC119(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -264(%rbp)
+	cvtss2sd	-264(%rbp), %xmm0
+	leaq	.LC130(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L69:
+	leaq	.LC128(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC119(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -268(%rbp)
+	cvtss2sd	-268(%rbp), %xmm0
+	leaq	.LC132(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L82
+.L68:
+	leaq	.LC133(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L82:
+	jmp	.L23
+.L3:
+	leaq	.LC7(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC134(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC135(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC136(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC137(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC138(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC139(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC140(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC141(%rip), %rdi
+	call	puts@PLT
+	leaq	.LC18(%rip), %rdi
+	call	puts@PLT
+	leaq	-324(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC6(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	-324(%rbp), %eax
+	cmpl	$8, %eax
+	ja	.L83
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L85(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L85(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L85:
+	.long	.L83-.L85
+	.long	.L92-.L85
+	.long	.L91-.L85
+	.long	.L90-.L85
+	.long	.L89-.L85
+	.long	.L88-.L85
+	.long	.L87-.L85
+	.long	.L86-.L85
+	.long	.L84-.L85
+	.text
+.L92:
+	leaq	.LC142(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC143(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -272(%rbp)
+	cvtss2sd	-272(%rbp), %xmm0
+	leaq	.LC144(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L91:
+	leaq	.LC145(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC143(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -276(%rbp)
+	cvtss2sd	-276(%rbp), %xmm0
+	leaq	.LC146(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L90:
+	leaq	.LC142(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC147(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -280(%rbp)
+	cvtss2sd	-280(%rbp), %xmm0
+	leaq	.LC148(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L89:
+	leaq	.LC149(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC147(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -284(%rbp)
+	cvtss2sd	-284(%rbp), %xmm0
+	leaq	.LC150(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L88:
+	leaq	.LC142(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC151(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -288(%rbp)
+	cvtss2sd	-288(%rbp), %xmm0
+	leaq	.LC152(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L87:
+	leaq	.LC153(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC151(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -292(%rbp)
+	cvtss2sd	-292(%rbp), %xmm0
+	leaq	.LC146(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L86:
+	leaq	.LC142(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm0
+	movss	.LC154(%rip), %xmm1
+	divss	%xmm1, %xmm0
+	movss	%xmm0, -296(%rbp)
+	cvtss2sd	-296(%rbp), %xmm0
+	leaq	.LC155(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L84:
+	leaq	.LC156(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-336(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC28(%rip), %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movss	-336(%rbp), %xmm1
+	movss	.LC154(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	movss	%xmm0, -300(%rbp)
+	cvtss2sd	-300(%rbp), %xmm0
+	leaq	.LC146(%rip), %rdi
+	movl	$1, %eax
+	call	printf@PLT
+	jmp	.L93
+.L83:
+	leaq	.LC157(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	jmp	.L23
+.L93:
+	jmp	.L23
+.L2:
+	leaq	.LC158(%rip), %rdi
+	movl	$0, %eax
+	call	printf@PLT
+.L23:
+	nop
+	movq	-24(%rbp), %rax
+	xorq	%fs:40, %rax
+	je	.L94
+	call	__stack_chk_fail@PLT
+.L94:
+	addq	$352, %rsp
+	popq	%rbx
+	popq	%r12
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE6:
+	.size	main, .-main
+	.globl	fact
+	.type	fact, @function
+fact:
+.LFB7:
+	.cfi_startproc
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movl	%edi, -20(%rbp)
+	movl	$1, -4(%rbp)
+	movl	$1, -8(%rbp)
+	jmp	.L97
+.L98:
+	movl	-4(%rbp), %eax
+	imull	-8(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	addl	$1, -8(%rbp)
+.L97:
+	movl	-8(%rbp), %eax
+	cmpl	-20(%rbp), %eax
+	jle	.L98
+	movl	-4(%rbp), %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE7:
+	.size	fact, .-fact
+	.section	.rodata
+	.align 4
+.LC29:
+	.long	1056964608
+	.align 4
+.LC31:
+	.long	1051371084
+	.align 4
+.LC33:
+	.long	1073741824
+	.align 4
+.LC35:
+	.long	1077936128
+	.align 4
+.LC37:
+	.long	1065353216
+	.align 4
+.LC54:
+	.long	1120403456
+	.align 4
+.LC59:
+	.long	1148846080
+	.align 8
+.LC71:
+	.long	3649767765
+	.long	1066523892
+	.align 4
+.LC87:
+	.long	1149239296
+	.align 4
+.LC119:
+	.long	1092616192
+	.align 4
+.LC143:
+	.long	1117126656
+	.align 4
+.LC147:
+	.long	1118568448
+	.align 4
+.LC151:
+	.long	1101004800
+	.align 4
+.LC154:
+	.long	1120534528
+	.ident	"GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0"
+	.section	.note.GNU-stack,"",@progbits
+	.section	.note.gnu.property,"a"
+	.align 8
+	.long	 1f - 0f
+	.long	 4f - 1f
+	.long	 5
+0:
+	.string	 "GNU"
+1:
+	.align 8
+	.long	 0xc0000002
+	.long	 3f - 2f
+2:
+	.long	 0x3
+3:
+	.align 8
+4:
