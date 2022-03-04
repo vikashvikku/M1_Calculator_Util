@@ -1,5 +1,6 @@
 # Repository to implement industry level Programming for Calculator
-## Reference:- https://bigprof.com/c4engineering/intgr001.htm#:~:text=This%20C%20program%20involves%20dividing,is%20the%20value%20of%20integration.
+## Reference:- 
+1. https://bigprof.com/c4engineering/intgr001.htm#:~:text=This%20C%20program%20involves%20dividing,is%20the%20value%20of%20integration.
 2. https://codeforwin.org/2015/06/c-program-to-find-hcf-of-two-numbers.html
 3. https://en.wikipedia.org/wiki/Integration
 4. https://app.diagrams.net/
