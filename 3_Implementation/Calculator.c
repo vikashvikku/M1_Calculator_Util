@@ -332,7 +332,7 @@ void main()
           printf("Your Value is %.1f Bit\n", mmr1);
           break;
         case 2:
-          printf("Enter the value in kb ");
+          printf("Enter the value in kb:- ");
           scanf("%f",&valueOne);
           float mmr2 = valueOne * 1024;
           printf("Your Value is %.1f Bytes\n", mmr2);
