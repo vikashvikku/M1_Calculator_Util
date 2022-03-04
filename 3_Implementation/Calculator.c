@@ -310,8 +310,8 @@ void main()
 
     case 4:
       printf("***  Welcome  to Calculator ***\n\n");
-      printf("Byte to bit = 1\n");
-      printf("Kilobyte to byte = 2\n");
+      printf("Bit to bytes = 1\n");
+      printf("Byte to Kilobyte = 2\n");
       printf("Megabyte to Kilobyte = 3\n");
       printf("Gigabyte to Megabyte = 4\n");
       printf("Terabyte to Gigabyte = 5\n");
@@ -326,52 +326,52 @@ void main()
       switch(operator4)
       {
         case 1:
-          printf("Enter the value in bits ");
-          scanf("%f",&valueOne);
-          float mmr1 = valueOne * 1024;
-          printf("Your Value is %.1f Byte\n", mmr1);
-          break;
-        case 2:
           printf("Enter the value in Bytes ");
           scanf("%f",&valueOne);
-          float mmr2 = valueOne * 1024;
-          printf("Your Value is %.1f kb\n", mmr2);
+          float mmr1 = valueOne * 1024;
+          printf("Your Value is %.1f Bit\n", mmr1);
           break;
-        case 3:
+        case 2:
           printf("Enter the value in kb ");
           scanf("%f",&valueOne);
-          float mmr3 = valueOne * 1024;
-          printf("Your Value is %.1f mb\n", mmr3);
+          float mmr2 = valueOne * 1024;
+          printf("Your Value is %.1f Bytes\n", mmr2);
           break;
-        case 4:
+        case 3:
           printf("Enter the value in mb ");
           scanf("%f",&valueOne);
-          float mmr4 = valueOne * 1024;
-          printf("Your Value is %.1f gb\n", mmr4);
+          float mmr3 = valueOne * 1024;
+          printf("Your Value is %.1f kb\n", mmr3);
           break;
-        case 5:
+        case 4:
           printf("Enter the value in gb ");
           scanf("%f",&valueOne);
-          float mmr5 = valueOne * 1024;
-          printf("Your Value is %.1f tb\n", mmr5);
+          float mmr4 = valueOne * 1024;
+          printf("Your Value is %.1f mb\n", mmr4);
           break;
-        case 6:
+        case 5:
           printf("Enter the value in tb ");
           scanf("%f",&valueOne);
-          float mmr6 = valueOne * 1024;
-          printf("Your Value is %.1f pb\n", mmr6);
+          float mmr5 = valueOne * 1024;
+          printf("Your Value is %.1f gb\n", mmr5);
           break;
-        case 7:
+        case 6:
           printf("Enter the value in pb ");
           scanf("%f",&valueOne);
-          float mmr7 = valueOne * 1024;
-          printf("Your Value is %.1f eb\n", mmr7);
+          float mmr6 = valueOne * 1024;
+          printf("Your Value is %.1f tb\n", mmr6);
           break;
-        case 8:
+        case 7:
           printf("Enter the value in eb ");
           scanf("%f",&valueOne);
+          float mmr7 = valueOne * 1024;
+          printf("Your Value is %.1f pb\n", mmr7);
+          break;
+        case 8:
+          printf("Enter the value in yb ");
+          scanf("%f",&valueOne);
           float mmr8 = valueOne * 1024;
-          printf("Your Value is %.1f zb\n", mmr8);
+          printf("Your Value is %.1f eb\n", mmr8);
           break;
         case 9:
           printf("Enter the value in zb ");
